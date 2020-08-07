@@ -1,4 +1,5 @@
 using System;
+// retorno do console
 class Aula08{
     static void Main(){
         double nota1, nota2, media;

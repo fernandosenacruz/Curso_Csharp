@@ -1,4 +1,5 @@
 using System;
+// bitwise
 class Aula09{
     static void Main(){
         int n=10, n2=20, n3=30, n4=40;

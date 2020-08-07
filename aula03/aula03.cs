@@ -1,4 +1,5 @@
 using System;
+// tipos primitivos
 class Aula03{
     static void Main(){
         byte n1= 10; // valores entre 0 - 255

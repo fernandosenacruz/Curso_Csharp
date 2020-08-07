@@ -1,4 +1,5 @@
 using System;
+// classe enumerada
 class Aula10{
     enum DiasDaSemana{Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado};
     static void Main(){

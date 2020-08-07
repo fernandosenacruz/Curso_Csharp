@@ -1,4 +1,5 @@
 using System;
+//typecast
 class Aula11{
     static void Main(){
         float n1=10.5f;

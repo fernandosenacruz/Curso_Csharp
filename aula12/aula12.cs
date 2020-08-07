@@ -1,4 +1,5 @@
 using System;
+// if
 class Aula12{
     static void Main(){
         int av1, av2, av3, resultado;

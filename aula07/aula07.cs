@@ -1,4 +1,5 @@
 using System;
+// constantes
 class Aula07{
     static void Main(){
         const string aluno="Fernando Sena";

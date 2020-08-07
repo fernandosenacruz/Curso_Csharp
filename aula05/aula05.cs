@@ -1,4 +1,5 @@
 using System;
+// Operadores Lógicos
 class Aula05{
     static void Main(){
         int res=(10+5)*2;
