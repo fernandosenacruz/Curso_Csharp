@@ -2,7 +2,8 @@ using System;
 class Aula08{
     static void Main(){
         double nota1, nota2, media;
-        string nome;
+        string nome, resultado;
+        resultado="Situação: aprovado(a).";
         
         Console.Write("Digite seu nome do aluno: ");
         nome=Console.ReadLine();
@@ -15,7 +16,10 @@ class Aula08{
         Console.WriteLine("Digite a nota 2: ");
         nota2=Convert.ToDouble(Console.ReadLine()); // 2 forma de converter string em double
         media= (nota1+nota2)/2;
-        Console.WriteLine("A média do aluno foi: {0} ", media);
+        if(media<=7.0){
+            resultado="Situação: reprovado(a).";            
+        }
+        Console.WriteLine("A média do(a) aluno(a) foi: {0}\n{1} ", media,resultado);
     
         }
 }
