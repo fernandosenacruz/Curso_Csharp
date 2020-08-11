@@ -1,6 +1,6 @@
 using System;
-// 
-class Aula19{
+// Métodos para array parte2
+class Aula24{
     static void Main(){
         
     }
