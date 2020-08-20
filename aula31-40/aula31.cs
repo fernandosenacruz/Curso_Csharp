@@ -1,31 +1,23 @@
 using System;
-// Sobrecarga de Construtores
-public class Jogador{
-    public int hp;
-    public bool vivo;
-    public string nome;
+// Static class
+// classes staticas não permitem instaciação de objetos nem permitem contrutores.
+// Todos os membros de uma classa static devem ser obrigatroriamente statics.
+static public class Jogador{
+    static public int hp;
+    static public bool vivo;
+    static public string nome;
 
-    public Jogador(){
-        hp=100;
-        vivo=true;
-        nome="Renatófolis";
-    }
-    public Jogador(string n){
+    static public void iniciar(string n){
         hp=100;
         vivo=true;
         nome=n;
     }
-    public Jogador(string n, int Hp){
-        hp=Hp;
+    static public Jogador(string n){
+        hp=100;
         vivo=true;
         nome=n;
     }
-    public Jogador(string n, int Hp, bool live){
-        hp=Hp;
-        vivo=live;
-        nome=n;
-    }
-    public void Info(){
+    static public void Info(){
         Console.WriteLine("Jogador: {0}", nome);
         Console.WriteLine("HP.....: {0}", hp);
         Console.WriteLine("Status.: {0}\n", vivo);
