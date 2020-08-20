@@ -12,30 +12,36 @@ static public class Jogador{
         vivo=true;
         nome=n;
     }
-    static public Jogador(string n){
-        hp=100;
-        vivo=true;
-        nome=n;
-    }
     static public void Info(){
         Console.WriteLine("Jogador: {0}", nome);
         Console.WriteLine("HP.....: {0}", hp);
         Console.WriteLine("Status.: {0}\n", vivo);
-    }
+        }
 }
+static class inimigo{
+    public bool alerta;
+    public string nome;
+    public inimigo(string n){
+        alerta=false;
+        nome=n;
+    }
+    public void info(){
+        Console.WriteLine(nome);
+        Console.WriteLine(alerta);
+        Console.WriteLine("\n");
+        }
+    }
 class Aula30{
     static void Main(){
-        Jogador p1=new Jogador();
-        Jogador p2=new Jogador("Ximira");
-        Jogador p3=new Jogador("Asdrubal",100);
-        Jogador p4=new Jogador("Birunda",70,true);
-        Jogador p5=new Jogador("Estáquio",0,false);
+        Jogador.iniciar("Ximira");
+        Jogador.Info(); 
 
-        p1.Info();
-        p2.Info();
-        p3.Info();
-        p4.Info();
-        p5.Info();
+        Inimigo vilao1=new Inimigo("Freezar");
+        Inimigo vilao2=new Inimigo("Moro");
+        Inimigo vilao3=new Inimigo("Maginboo");
 
+        vilao1.info();
+        vilao2.info();
+        vilao3.info();  
     }
 }
